@@ -1,0 +1,1 @@
+<?php require_once "./parte_inferior.php" ?>
