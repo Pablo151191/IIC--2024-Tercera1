@@ -1,1 +1,3 @@
-<?php require_once "./parte_inferior.php" ?>
+<script src="./script/hamburger-icon.js"></script>
+
+
