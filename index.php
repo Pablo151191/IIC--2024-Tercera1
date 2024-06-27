@@ -9,8 +9,21 @@
 <body>
     <div class="main-img">
         <img src="./images/Clases-en-linea-1.png" alt="">
-
     </div>
+    <<div class="main-accordion-container">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 
