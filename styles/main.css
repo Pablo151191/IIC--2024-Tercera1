@@ -70,6 +70,7 @@ body {
     height: 2000px;
 
 }
+
 .titulo {
     width: 100%;
     height: 100px;
@@ -101,13 +102,13 @@ body {
     width: 1140px;
 }
 
-.main-accordion-container{
+.main-accordion-container {
     width: 100%;
     border-bottom: 4px solid black;
 
 }
 
-.accordion-item{
+.accordion-item {
     background-color: bisque;
     width: 100%;
     display: flex;
@@ -117,12 +118,13 @@ body {
     height: auto;
     border-top: 2px solid black;
 }
-.accordion-item:hover{
+
+.accordion-item:hover {
     transform: scale(1.05);
     border: 3px solid black;
-}  
+}
 
-.accordion-title{
+.accordion-title {
     width: 100%;
     height: auto;
     background-color: rgb(215, 245, 245);
@@ -133,20 +135,20 @@ body {
     font-size: 20px;
     font-weight: 500;
     padding: 10px 0;
-} 
+}
 
-.accordion-desc{
+.accordion-desc {
     width: 100%;
-    border-top:1px solid black ;
+    border-top: 1px solid black;
     display: none
 }
 
-.accordion-title .tab-active{
+.accordion-title .tab-active {
     font-size: 30px;
-    pointer-events:visible; 
+    pointer-events: visible;
 }
 
-.tab-active .accordion-desc{
+.tab-active .accordion-desc {
     height: 50px;
     display: flex;
     flex-direction: column;
@@ -155,12 +157,99 @@ body {
     padding: 10px 0;
 }
 
+.card-list {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+
+.card-item {
+    background-color: white;
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px 0px black;
+
+}
+
+.card-item:hover {
+    transform: scale(1.005) translateY(-3px);
+
+
+}
+
+.card-item img {
+    width: 100%;
+}
+
+.card-info {
+    width: 100%;
+    font-size: 12pt;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.card-title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: 550;
+    padding: 10px 0;
 
 
 
+}
 
 
+.card-desc {
+    width: auto;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: justify;
+    padding: 0 10px 20px 10px;
+    overflow: hidden;
 
+}
+
+.card-cta {
+    text-decoration: none;
+    width: 130px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: aliceblue;
+    background-color: blue;
+
+
+}
+
+.card-cta:hover {
+    transform: scale(1.1) translateY(-2px) translateX(-2px);
+
+
+}
 
 
 
@@ -178,7 +267,7 @@ body {
 /*TRABAJAMOS RESPONSIVE*/
 
 @media (max-width: 1025px) {
-    .menu-container {
+    .menu-container{
         width: 50%;
         height: 100%;
         display: flex;
@@ -213,8 +302,8 @@ body {
         display: block;
         border-radius: 3px;
     }
-
-    .menu-open .menu-derecha {
+    
+    .menu-open .menu-derecha{
         z-index: -2;
         width: auto;
         height: auto;
@@ -222,17 +311,44 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: aliceblue;
+        background-color:aliceblue;
         border: 2px solid black;
         border-radius: 15px;
-        font-size: 50px;
+        font-size: 50px;    
         padding: 10px 20px;
     }
 
-    .enlaces-menu-derecha {
+    .enlaces-menu-derecha{
         width: 100%;
         text-align: center;
         padding: 5px 0 5px 0;
+    }
+
+    .main-img img {
+        width: 90%;
+    }
+    
+    .card-list{
+        justify-content: column;
+        
+    }
+    .card-item{
+        width: 90%;
+        margin: 30px 0;
+    }
+    .card-title{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .card-desc{
+        font-size: 33px;
+        height: 220px;
+    }
+
+    .card-cta{
+        width: 300px;
+        font-size: 40px;
+        height: 80px;
     }
 
 }
