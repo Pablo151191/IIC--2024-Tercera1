@@ -157,6 +157,32 @@ body {
     padding: 10px 0;
 }
 
+.mid-info{
+    width: 100%;
+    height: auto;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.mid-info-title{
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.mid-info-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+}
+
 .card-list {
     background-color: aliceblue;
     display: flex;
@@ -251,10 +277,47 @@ body {
 
 }
 
+footer{
+    background: black;
+    color: white;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 25px;
+}
 
+.footer-izquierda{
+    /* background: #ebdfdf; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
+}
 
+.footer-derecha{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right:30px;
+    padding-bottom: 25px;
+}
+.footer-derecha p{
+    width: 25%;
+    padding-top: 5px;
+    text-align: justify;
+}
 
+.ing-ind{
+    width: 100%;
+    height: 1000px;
+}
 
 
 
@@ -327,6 +390,8 @@ body {
     .main-img img {
         width: 90%;
     }
+
+   
     
     .card-list{
         justify-content: column;
@@ -350,5 +415,22 @@ body {
         font-size: 40px;
         height: 80px;
     }
-
+    footer{
+        flex-direction: column;
+        height: 270PX;
+    }
+    .footer-izquierda{
+        width: 100%;
+        font-size: 30PX;
+    }
+    .footer-derecha{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 20PX;
+    }
+    .footer-derecha p{
+        padding-top: 5px;
+        text-align: center;
+    }
 }
